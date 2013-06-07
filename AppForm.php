@@ -80,10 +80,7 @@ $(function() {
 		border: none;
 		background-color: transparent;
 	}
-	th{
-		text-align: center;
-	}
-	td{
+	th,td{
 		text-align: center;
 	}
 </style>

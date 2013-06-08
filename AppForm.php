@@ -67,15 +67,15 @@ FN\jQueryInclude();
 </script>
 <style>
   .TxtInput{
-    border: 2px solid darkgray;
-    width: 98%;
+    border: 1px solid darkgray;
+    width: 95%;
     margin: 0px;
   }
   .TxtInput:hover{
-    border: 2px solid #fbd850;
+    border: 1px solid #fbd850;
   }
   .TxtInput:focus{
-    border: 2px solid #1c94c4;
+    border: 1px solid #1c94c4;
   }
   input{
     padding: 2px 4px 2px 4px;
@@ -107,18 +107,69 @@ FN\jQueryInclude();
       <h2 style="text-align: center">Action Plan Format (Micro Planning)</h2>
       <div style="border: 2px solid black;">
         <h3 style="text-align: center;border-bottom: 2px solid black;background-color: #333333;color: white;">National Rural Health Mission - Child Health Screening and Early Intervention Services</h3>
-        <table rules="all" width="100%" class="DGrid">
+        <table border="1" rules="all" width="100%" class="DGrid">
           <tr>
-            <td colspan="8">Action Plan of <input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="13">Action Plan of <input style="width:100px;" class="TxtInput" type="text"/></td>
           </tr>
           <tr>
-            <td colspan="3">State:<input style="width:100px;" class="TxtInput" type="text"/></td>
-            <td colspan="3">District:<input style="width:100px;" class="TxtInput" type="text"/></td>
-            <td colspan="3">Block/Municipality:<input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="4">State:<input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="4">District:<input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="5">Block/Municipality:<input style="width:100px;" class="TxtInput" type="text"/></td>
+          </tr>
+          <tr>
+            <td colspan="4" rowspan="2">Education Department</td>
+            <td colspan="4" rowspan="2">Woman & Child Department</td>
+            <td colspan="3">Dedicated team UID:</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+          </tr>
+          <tr>
+            <td colspan="5">Details of Dedicated team Staff</td>
+          </tr>
+          <tr>
+            <td colspan="2">Name of SI:</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="2">Name of CDPO:</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="3">Name</td>
+            <td colspan="2">Designation</td>
+          </tr>
+          <tr>
+            <td colspan="2">Mob. No.</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="2">Mob. No.</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="3"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+          </tr>
+          <tr>
+            <td colspan="2">Office. No.</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="2">Office. No.</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="3"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+          </tr>
+          <tr>
+            <td colspan="8" rowspan="3"></td>
+            <td colspan="3"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+          </tr>
+          <tr>
+            <td colspan="3"><input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
+          </tr>
+          <tr>
+            <td colspan="3">Office Phone:-</td>
+            <td colspan="2"><input style="width:100px;" class="TxtInput" type="text"/></td>
           </tr>
           <tr>
             <th rowspan="2">Sl. No.</th>
             <th rowspan="2">Name of Institution</th>
+            <th rowspan="2">School / Anganwadi</th>
+            <th rowspan="2">Anganwadi Code</th>
+            <th rowspan="2">School Code</th>
+            <th rowspan="2">Category of School</th>
+            <th rowspan="2">Category of Standard</th>
             <th colspan="3">Number of Children in Institution</th>
             <th rowspan="2">School Contact (Mobile) No.</th>
             <th rowspan="2">Visit Date</th>
@@ -132,12 +183,17 @@ FN\jQueryInclude();
           <tr id="Row">
             <td style="width:50px;"><input style="width:20px;" id="SlNo" readonly="readonly" value="1"/></td>
             <td><input id="InstName" class="TxtInput" name="InstName[]" type="text" /></td>
+            <td><input id="InstName" class="TxtInput" name="InstName[]" type="text" /></td>
+            <td><input id="InstName" class="TxtInput" name="InstName[]" type="text" /></td>
+            <td><input id="InstName" class="TxtInput" name="InstName[]" type="text" /></td>
+            <td><input id="InstName" class="TxtInput" name="InstName[]" type="text" /></td>
+            <td><input id="InstName" class="TxtInput" name="InstName[]" type="text" /></td>
             <td style="width:60px;"><input style="width: 45px;" id="EnrMale" class="TxtInput" name="EnrMale[]" type="number" min="0" max="150"/></td>
             <td style="width:60px;"><input style="width: 45px;" id="EnrFem" class="TxtInput" name="EnrFem[]" type="number" min="0" max="150"/></td>
             <td style="width:60px;"><span id="EnrTotal">0</span></td>
             <td style="width:100px;text-align: center;"><input style="width: 85px;" id="Mobile" maxlength="10" class="TxtInput" name="Mobile[]" type="text" /></td>
-            <td style="width:100px;"><input style="text-align: right;width: 92px;" id="VisitDate" class="TxtInput datepick" name="VisitDate[]" type="text" /></td>
-            <td style="width:100px;"><input id="SchWeekDay" type="text" readonly="readonly"/></td>
+            <td style="width:65px;"><input style="text-align: right;width: 65px;" id="VisitDate" class="TxtInput datepick" name="VisitDate[]" type="text" /></td>
+            <td style="width:75px;"><input style="width: 75px;" id="SchWeekDay" type="text" readonly="readonly"/></td>
           </tr>
         </table>
         <input type="button" id="AddRow" value="Add Schedule" />

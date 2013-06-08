@@ -28,7 +28,7 @@ FN\jQueryInclude();
     <div class="LeftPanelSide"></div>
     <div class="RightPanelSide"></div>
     <h1>
-<?php echo AppTitle; ?>
+      <?php echo AppTitle; ?>
     </h1>
   </div>
   <div class="Header"></div>
@@ -40,13 +40,12 @@ FN\jQueryInclude();
     <p><b>Block/Municipality: Pingla</b></p>
     <p><b>Dedicated team UID:</b></p>
     <p><b>Details of Dedicated team Staff:</b></p>
-
   </div>
   <div class="pageinfo">
     <?php FN\pageinfo(); ?>
   </div>
   <div class="footer">
-<?php FN\footerinfo(); ?>
+    <?php FN\footerinfo(); ?>
   </div>
 </body>
 </html>

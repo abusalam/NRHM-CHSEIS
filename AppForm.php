@@ -78,7 +78,7 @@ FN\jQueryInclude();
     border: 1px solid #1c94c4;
   }
   input{
-    padding: 2px 4px 2px 4px;
+    padding: 4px;
   }
   input[readonly="readonly"]{
     border: none;
@@ -112,8 +112,8 @@ FN\jQueryInclude();
             <td colspan="13">Action Plan of <input style="width:100px;" class="TxtInput" type="text"/></td>
           </tr>
           <tr>
-            <td colspan="4">State:<input style="width:100px;" class="TxtInput" type="text"/></td>
-            <td colspan="4">District:<input style="width:100px;" class="TxtInput" type="text"/></td>
+            <td colspan="4"><b>State:</b> West Bengal</td>
+            <td colspan="4"><b>District:</b> Paschim Medinipur</td>
             <td colspan="5">Block/Municipality:<input style="width:100px;" class="TxtInput" type="text"/></td>
           </tr>
           <tr>
@@ -197,7 +197,6 @@ FN\jQueryInclude();
           </tr>
         </table>
         <input type="button" id="AddRow" value="Add Schedule" />
-        <p>Content goes here</p>
       </div>
     </div>
   </div>
